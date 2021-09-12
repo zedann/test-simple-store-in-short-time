@@ -1,0 +1,132 @@
+:root{
+    --main-color: #FEEE00;
+    --sec-color:#000;
+}
+
+*{
+    box-sizing: border-box;
+    
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    
+}
+i{
+    color: var(--main-color);
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: #5d5d5a; */
+}
+/* header */
+.header{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--main-color);
+    height:43px;
+}
+
+.header .logo h1{
+    font-size: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.header input {
+    width: calc(100% - 200px);
+    height: 22px;
+    border-radius: 5px;
+    outline: transparent;
+    
+}
+.header ul {
+    display: flex;
+    
+}
+.header ul li {
+    padding-right: 15px;
+}
+.header ul li a{
+    color:var(--sec-color);
+}
+.header ul i {
+    padding-right: 15px;
+    cursor: pointer;
+    color: var(--sec-color);
+}
+/* /header */
+/* content */
+.content {
+    
+}
+.content .container{
+    margin: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 10px;
+    
+} 
+.content .card {
+    background-color: var(--main-color);
+    position: relative;
+    transition: 0.3s;
+}
+
+
+.card img {
+    width: 100%;
+}
+
+.content .card h3 {
+    font-size: 15px;
+    text-align: center;
+}
+.content .card p {
+    padding: 5px;
+    font-size: 11px;
+    text-align: center;
+    line-height: 1.8;
+}
+.content .card .btn {
+    background-color: transparent;
+    outline: none;
+    color: var(--sec-color);
+    border: 1px solid var(--main-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    font-size: 25px;
+    border-radius: 5px;
+    display: none;
+}
+.content .card:hover{
+    margin: 2px;
+}
+.content .card:hover .btn{
+    display: block;
+    
+}
+/* /content */
+/* footer */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+    margin-top: 30px;
+    background-color: #000;
+    color: #fff;
+    height: 50px;
+}
+footer a {
+    padding: 100px;
+    
+}
+
+/* /footer */
